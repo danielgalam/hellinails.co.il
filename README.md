@@ -29,10 +29,9 @@ Then open http://localhost:3000.
 
 ## Deploy to Vercel
 
-1. In Vercel choose **Add New → Project** and import this GitHub repository. Vercel detects Next.js automatically, so you don't need to change any build settings.
-2. Under **Settings → Environment Variables**, add `NEXT_PUBLIC_SITE_URL` set to your new domain, for example `https://www.your-new-domain.co.il`. Canonical links, the sitemap and social share previews use this value.
-3. Under **Settings → Domains**, add the new domain and follow Vercel's DNS instructions.
-4. Redeploy so the environment variable takes effect.
+1. In Vercel choose **Add New → Project** and import this GitHub repository. Vercel detects Next.js automatically, so you don't need to change any build settings. Vercel publishes the `main` branch.
+2. Under **Settings → Domains**, add the domain and follow Vercel's DNS instructions.
+3. The site's address (`https://www.hellinails.co.il`) is set in `lib/site.js`; canonical links, the sitemap and social share previews use it. If the domain changes, edit it there. You can also add an environment variable `NEXT_PUBLIC_SITE_URL` in Vercel; if you do, its type must be a plain (non-secret/"config") variable.
 
 **If the Vercel link shows 404 NOT_FOUND:** open the project in Vercel and go to **Settings → Build and Deployment**. Make sure **Framework Preset** is **Next.js**, **Root Directory** is empty, and **Output Directory** has no override. Then go to **Deployments**, open the menu (⋯) on the latest deployment and choose **Redeploy**. The repo's `vercel.json` already sets the framework to Next.js.
 
