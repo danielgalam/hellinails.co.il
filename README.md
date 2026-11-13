@@ -34,6 +34,8 @@ Then open http://localhost:3000.
 3. Under **Settings → Domains**, add the new domain and follow Vercel's DNS instructions.
 4. Redeploy so the environment variable takes effect.
 
+**If the Vercel link shows 404 NOT_FOUND:** open the project in Vercel and go to **Settings → Build and Deployment**. Make sure **Framework Preset** is **Next.js**, **Root Directory** is empty, and **Output Directory** has no override. Then go to **Deployments**, open the menu (⋯) on the latest deployment and choose **Redeploy**. The repo's `vercel.json` already sets the framework to Next.js.
+
 ## Where to edit content
 
 | What | File |
