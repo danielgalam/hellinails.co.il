@@ -1,0 +1,20 @@
+{
+  "name": "hellinails",
+  "version": "1.0.0",
+  "private": true,
+  "description": "חלי כהן - ציפורניים | Helli Nails website (Next.js)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fontsource/alef": "^5.3.0",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
