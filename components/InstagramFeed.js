@@ -48,14 +48,14 @@ export default function InstagramFeed() {
         <div className="ig-profile">
           <Image
             src="/images/instagram/profile.jpg"
-            alt={`${site.instagramFeedAccount} Instagram`}
+            alt={`${site.instagramAccount} Instagram`}
             width={56}
             height={56}
             className="ig-avatar"
           />
           <div>
-            <a href={site.instagramFeedUrl} target="_blank" rel="noopener noreferrer" className="ig-username">
-              {site.instagramFeedAccount}
+            <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="ig-username">
+              {site.instagramAccount}
             </a>
             <div className="ig-bio" dir="auto">
               <strong>חלי ציפורניים</strong>
@@ -68,7 +68,7 @@ export default function InstagramFeed() {
             </div>
           </div>
         </div>
-        <a href={site.instagramFeedUrl} target="_blank" rel="noopener noreferrer" className="ig-follow">
+        <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="ig-follow">
           <Image src="/images/icons/instagram.png" alt="" width={16} height={16} />
           Follow
         </a>
@@ -119,14 +119,14 @@ export default function InstagramFeed() {
             <div className="lightbox-side">
               <div className="lightbox-account">
                 <Image src="/images/instagram/profile.jpg" alt="" width={32} height={32} className="ig-avatar" />
-                <span>{site.instagramFeedAccount}</span>
+                <span>{site.instagramAccount}</span>
               </div>
               {post.caption && (
                 <p className="lightbox-caption" dir="auto">
                   {post.caption}
                 </p>
               )}
-              <a href={site.instagramFeedUrl} target="_blank" rel="noopener noreferrer" className="lightbox-link">
+              <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="lightbox-link">
                 <span dir="rtl">לצפייה באינסטגרם</span>
               </a>
             </div>

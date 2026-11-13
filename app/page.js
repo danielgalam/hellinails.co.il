@@ -42,7 +42,7 @@ export default function HomePage() {
       <About />
       <Address />
       <Prices />
-      <InstagramHandle textHref={site.instagramFeedUrl} iconHref="https://www.instagram.com/hellic_nails" />
+      <InstagramHandle />
       <InstagramFeed />
     </>
   );

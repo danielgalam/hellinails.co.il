@@ -18,7 +18,7 @@ export default function PromoPage() {
       <Address />
       <About />
       <Prices />
-      <InstagramHandle textHref="https://www.instagram.com/hellic_nails" iconHref="https://www.instagram.com/hellic_nails" />
+      <InstagramHandle />
       <InstagramFeed />
     </>
   );
