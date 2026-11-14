@@ -11,6 +11,10 @@ export const metadata = {
   metadataBase: new URL(siteUrl),
   title: 'חלי כהן - ציפורניים | פרויקט הגפן הרצליה',
   description: 'מניקור ג׳ל  ברמה גבוהה ₪140 אני אוהבת להוציא בנות יפות והמטרה שלי היא להפוך אותך ללקוחה מרוצה',
+  // Same Google Search Console verification tag the Wix site used, so the existing property stays verified.
+  verification: {
+    google: 'u013sQjrPyzV9OcnU14HPU5RT8FNXzD0ZnYnKQWLaYE',
+  },
   openGraph: {
     type: 'website',
     locale: 'he_IL',
